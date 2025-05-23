@@ -4,70 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Taxi Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #121212; /* dark background for sleek look */
-      color: #e0e0e0;      /* soft light text */
+      font-family: 'Poppins', sans-serif;
+      background-color: #273043;
+      color: #F0F8EA;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
       margin: 0;
     }
     h1 {
-      color: #ffd600;      /* elegant gold/yellow */
-      margin-bottom: 10px;
       font-weight: 700;
+      font-size: 2.8rem;
+      color: #9097C0;
+      margin-bottom: 15px;
     }
     p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      color: #bbbbbb;      /* soft gray text */
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #898952;
+      margin-bottom: 40px;
     }
     img {
       max-width: 320px;
       width: 90%;
       border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(255, 214, 0, 0.3); /* subtle gold glow */
-      margin-bottom: 35px;
+      box-shadow: 0 6px 20px rgba(152, 68, 71, 0.6);
+      border: 3px solid #984447;
+      margin-bottom: 40px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 2px solid #ffd600;
-      background: #1e1e1e;
+      background-color: #F0F8EA;
     }
     img:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 25px rgba(255, 214, 0, 0.6);
+      box-shadow: 0 10px 30px rgba(152, 68, 71, 0.9);
     }
-    .whatsapp-button {
+    .contact-button {
       display: inline-block;
-      background-color: #25D366;  /* WhatsApp green */
-      color: white;
-      padding: 15px 35px;
+      background-color: #984447;
+      color: #F0F8EA;
+      font-weight: 700;
       font-size: 1.3rem;
+      padding: 15px 40px;
       border-radius: 30px;
       text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.7);
+      box-shadow: 0 6px 20px rgba(152, 68, 71, 0.7);
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
-    .whatsapp-button:hover {
-      background-color: #128C4A;  /* deeper green */
-      box-shadow: 0 8px 20px rgba(18, 140, 74, 0.8);
+    .contact-button:hover {
+      background-color: #9097C0;
+      color: #273043;
+      box-shadow: 0 8px 25px rgba(144, 151, 192, 0.9);
     }
     @media (max-width: 400px) {
-      .whatsapp-button {
-        padding: 12px 25px;
+      .contact-button {
         font-size: 1.1rem;
+        padding: 12px 30px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>🚖 Need a Ride?</h1>
-  <p>Hi! I'm your local taxi driver. Tap below to message me on WhatsApp!</p>
+  <h1>Need a Ride?</h1>
+  <p>Your reliable local taxi driver. Tap below to contact me on WhatsApp.</p>
   <img src="taxi.jpeg" alt="Taxi" />
   <br />
   <a
-    class="whatsapp-button"
+    class="contact-button"
     href="https://wa.me/50687698581"
     target="_blank"
     rel="noopener noreferrer"
