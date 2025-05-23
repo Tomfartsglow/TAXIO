@@ -7,32 +7,35 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #ffffff;       /* clean white background */
-      color: #1a1a1a;            /* very dark text for readability */
+      background: #121212; /* dark background for sleek look */
+      color: #e0e0e0;      /* soft light text */
       text-align: center;
       padding: 40px 20px;
       margin: 0;
     }
     h1 {
-      color: #0078D7;            /* bright blue heading */
+      color: #ffd600;      /* elegant gold/yellow */
       margin-bottom: 10px;
       font-weight: 700;
     }
     p {
       font-size: 1.1rem;
       margin-bottom: 30px;
-      color: #444444;            /* dark grey for paragraph */
+      color: #bbbbbb;      /* soft gray text */
     }
     img {
       max-width: 320px;
       width: 90%;
       border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 15px rgba(255, 214, 0, 0.3); /* subtle gold glow */
       margin-bottom: 35px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #ffd600;
+      background: #1e1e1e;
     }
     img:hover {
       transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(255, 214, 0, 0.6);
     }
     .whatsapp-button {
       display: inline-block;
@@ -43,12 +46,12 @@
       border-radius: 30px;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.6);
+      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.7);
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
     .whatsapp-button:hover {
-      background-color: #128C4A;  /* deeper green on hover */
-      box-shadow: 0 8px 20px rgba(18, 140, 74, 0.7);
+      background-color: #128C4A;  /* deeper green */
+      box-shadow: 0 8px 20px rgba(18, 140, 74, 0.8);
     }
     @media (max-width: 400px) {
       .whatsapp-button {
@@ -59,7 +62,7 @@
   </style>
 </head>
 <body>
-  <h1> Need a Ride?</h1>
+  <h1>🚖 Need a Ride?</h1>
   <p>Hi! I'm your local taxi driver. Tap below to message me on WhatsApp!</p>
   <img src="taxi.jpeg" alt="Taxi" />
   <br />
